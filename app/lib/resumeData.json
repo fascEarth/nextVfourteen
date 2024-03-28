@@ -1,0 +1,170 @@
+{
+    "name": "Rajkumar Shanmugavel",
+    "title": "Experienced Full Stack Developer",
+    "about": "Proven track record of 7 years in web development. Adept in a range of technologies, including HTML, CSS, JS, PHP, and NEXT JS (derived from ReactJS Library). Recognized for leadership in successfully overseeing the migration of projects to Next.js, resulting in enhanced performance. Renowned for developing market-ready applications and designing scalable solutions. Enthusiastic about contributing to innovation within dynamic technological landscapes.",
+    "skills": [
+        {
+            "name": "HTML",
+            "image": "html.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "CSS",
+            "image": "css.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "JavaScript",
+            "image": "javascript.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "PHP",
+            "image": "php.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "NEXT JS",
+            "image": "nextjs.png",
+            "experience": "4 years"
+        },
+        {
+            "name": "React",
+            "image": "react.png",
+            "experience": "4 years"
+        },
+        {
+            "name": "NGINX",
+            "image": "nginx.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "Bootstrap",
+            "image": "bootstrap.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "MATERIAL-UI",
+            "image": "materialui.png",
+            "experience": "4 years"
+        },
+        {
+            "name": "Agile",
+            "image": "agile.png",
+            "experience": "7 years"
+        },
+        {
+            "name": "GIT",
+            "image": "git.png",
+            "experience": "7 years"
+        }
+    ],
+    "contact": {
+      "email": "raj.yaffy@live.com",
+      "phone": "+91 9994108109"
+    },
+    "experiences": [
+      {
+        "position": "Team Lead",
+        "company": "iProtecs Solutions Pvt Ltd",
+        "location": "Coimbatore, Tamilnadu, India",
+        "start_date": "NOV 2018",
+        "end_date": "DEC 2023",
+        "description": "As a Team Lead at iProtecs Solutions Pvt Ltd, I led a team of 3 NextJS developers. Instituted a centralized NGINX setup, significantly enhancing the adaptability of the project infrastructure. Streamlined the management of routing and configuration rules, reducing maintenance overhead. Technologies Used: Core PHP, JS, NEXT JS(REACT), NGINX, Application Development, Frontend Enhancement."
+      },
+      {
+        "position": "Senior Software Developer",
+        "company": "WebChirpy",
+        "location": "Coimbatore, Tamilnadu, India",
+        "start_date": "JAN 2018",
+        "end_date": "OCT 2018",
+        "description": "As a Senior Software Developer at WebChirpy, I leveraged the CodeIgniter framework to architect and develop a robust and user-friendly application. Acquired expertise in the Angular framework and applied this knowledge to enhance the application's frontend, significantly improving its user interface and interactivity. Technologies Used: CodeIgniter, Angular, Application Development, Frontend Enhancement."
+      },
+      {
+        "position": "Software Developer",
+        "company": "Techware Solutions Pvt Ltd",
+        "location": "Kochi, Kerala, India",
+        "start_date": "APR 2016",
+        "end_date": "AUG 2017",
+        "description": "My journey in web app development began at Techware Solutions Pvt Ltd. I started with a solid grasp of HTML, CSS, and JavaScript. I independently advanced my skills to master the CodeIgniter framework, leading to the creation of two successful applications. This experience marked the initiation of my career in web app development, demonstrating a rapid learning curve and the ability to independently create market-ready products. Technologies Used: HTML, CSS, JavaScript, CodeIgniter, PHP, MySQL, Application Development, Database Management."
+      },
+      {
+        "position": "Process Associate",
+        "company": "Technosoft Corporation",
+        "location": "Chennai, Tamilnadu, India",
+        "start_date": "JUL 2015",
+        "end_date": "MAR 2016",
+        "description": "During my nine months at Technosoft Corp, I excelled as an associate, specializing in training and converting doctor and clinic worksheets into system information. This experience enriched my skill set in data transformation and deepened my understanding of healthcare systems, significantly contributing to my professional growth and adaptability in dynamic work environments."
+      }
+      
+    ],
+    "education": {
+      "degree": "B.TECH. in Information Technology",
+      "year": "2011 - 2014",
+      "university": "Anna University",
+      "college": "Muthayammal Engineering College"
+    },
+    "projects": [
+        {
+            "name": "DETACLOUD",
+            "image": "detacloud.png",
+            "url": "https://detacloud.detasad.com/",
+            "start_date": "NOV 2021",
+            "end_date": "DEC 2023",
+            "description": "Detacloud based in NEXTJS(REACTJS). Architecture Design: Crafted and implemented a robust architecture using Next.js, ensuring scalability and efficiency. Library Development: Developed reusable libraries to speed up development and maintain consistency platform-wide. Centralized Rule Configuration: Orchestrated the implementation of a centralized NGINX configuration system."
+        },
+        {
+            "name": "MDESK",
+            "image": "mdesk.png",
+            "url": "http://www.mdesk.io/",
+            "start_date": "NOV 2018",
+            "end_date": "OCT 2021",
+            "description": "Led the creation of a custom PHP framework SPA application. Utilized PHP, JavaScript, jQuery, AJAX, and JSON. Oversaw architecture design, managing a cross-functional team. mDESK provides end-to-end application monitoring for IT infrastructures, offering proactive management of outages and in-depth visibility into performance metrics. Tailored for scalability, it instantly monitors microservices, enterprise applications, and supporting networks, making it pivotal for proactive IT health and performance management."
+        },
+        {
+            "name": "ARIGI",
+            "image": "webchirpy.png",
+            "url": "https://webchirpy.com/services/",
+            "start_date": "JAN 2018",
+            "end_date": "OCT 2018",
+            "description": "Led the development of Webchirpy, mastering Angular 5 to convert UI templates into dynamic interfaces. Integrated payment APIs, collaborated with Java developers for CRUD operations, and employed websockets for real-time notifications and billing. This Swiggy-like platform streamlines food ordering for dining and parcels, enhancing efficiency for dining and food store managers."
+        },
+        {
+            "name": "YourWillBeDone",
+            "image": "webchirpy.png",
+            "url": "https://webchirpy.com/services/",
+            "start_date": "JAN 2018",
+            "end_date": "OCT 2018",
+            "description": "Led the development of YourWillBeDone, a wills management application in collaboration with a legal team. Utilized CodeIgniter, MySQL, and Linux Apache for robust development. This app ensures efficient organization and maintenance of wills, providing a secure platform for legal processes."
+        },
+        {
+            "name": "Gocourt",
+            "image": "techware.svg",
+            "url": "https://techwarelab.com/products",
+            "start_date": "JUL 2016",
+            "end_date": "DEC 2016",
+            "description": "Developed Gocourt using the LAMP stack and CodeIgniter framework. This web application facilitates lawyer and client management, allowing clients to discover and schedule relevant lawyers for online, offline, phone, and video appointments. Lawyers receive notifications and efficiently manage client applications, streamlining their workflow for necessary legal tasks."
+        },
+        {
+            "name": "BookMyDoc",
+            "image": "techware.svg",
+            "url": "https://techwarelab.com/products",
+            "start_date": "JAN 2017",
+            "end_date": "AUG 2017",
+            "description": "As the lead developer, I crafted BookMyDoc using the LAMP stack and CodeIgniter framework. This web application, focused on patient appointment booking, doctor management, and hospital/clinic administration, achieved substantial sales in various marketplaces, underlining its success and widespread adoption."
+        }
+    ],
+    "languages": {
+      "english": ["Read", "Write", "Speak"],
+      "tamil": ["Read", "Write", "Speak"],
+      "telugu": ["Speak"],
+      "malayalam": ["Speak"]
+    },
+    "strengths": [
+      "Technical Proficiency: Skilled in Next.js, adept with NGINX server configuration, and creates reusable libraries.",
+      "Adaptability and Learning Agility: Self-learning Next.js and implementing new technologies.",
+      "Team Collaboration: Creating an architecture for fellow engineers for fostering collaboration and enabling a smoother workflow among team members.",
+      "Problem-Solving Skill: Architecting the project's structure and setting up NGINX showcased adept problem-solving skills."
+    ]
+  }
+  
