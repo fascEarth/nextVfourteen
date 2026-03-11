@@ -6,6 +6,8 @@ import { z } from "zod";
 
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
+import { auth } from '@/auth';
+import bcrypt from 'bcrypt';
 
 const FormSchema = z.object({
     id: z.string(),
@@ -134,4 +136,79 @@ export async function deleteInvoice(id: string){
         }
     }
     
+}
+
+const ProfileFormSchema = z.object({
+  name: z.string().min(1, { message: 'Name is required.' }),
+  email: z.string().email({ message: 'Please enter a valid email address.' }),
+  password: z.union([z.string().min(6, { message: 'Password must be at least 6 characters.' }), z.literal('')]),
+  confirmPassword: z.string().optional().or(z.literal('')),
+}).refine(
+  (data) => !data.password || data.password === data.confirmPassword,
+  { message: 'Passwords do not match.', path: ['confirmPassword'] }
+);
+
+export type ProfileState = {
+  errors?: {
+    name?: string[];
+    email?: string[];
+    password?: string[];
+    confirmPassword?: string[];
+  };
+  message?: string | null;
+  success?: boolean;
+};
+
+export async function updateUserProfile(prevState: ProfileState, formData: FormData): Promise<ProfileState> {
+  const session = await auth();
+  if (!session?.user?.id) {
+    return { message: 'Not authenticated.' };
+  }
+
+  const validatedFields = ProfileFormSchema.safeParse({
+    name: formData.get('name'),
+    email: formData.get('email'),
+    password: formData.get('password') || '',
+    confirmPassword: formData.get('confirmPassword') || '',
+  });
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      message: 'Missing or invalid fields. Failed to update profile.',
+    };
+  }
+
+  const { name, email, password } = validatedFields.data;
+
+  try {
+    // Check if email is already in use by another user
+    const existingUser = await sql`SELECT id FROM users WHERE email = ${email} AND id != ${session.user.id}`;
+    if (existingUser.rows.length > 0) {
+      return {
+        errors: { email: ['This email is already in use by another account.'] },
+        message: 'Failed to update profile.',
+      };
+    }
+
+    if (password) {
+      const hashedPassword = await bcrypt.hash(password, 10);
+      await sql`
+        UPDATE users
+        SET name = ${name}, email = ${email}, password = ${hashedPassword}
+        WHERE id = ${session.user.id}
+      `;
+    } else {
+      await sql`
+        UPDATE users
+        SET name = ${name}, email = ${email}
+        WHERE id = ${session.user.id}
+      `;
+    }
+  } catch (error) {
+    return { message: 'Database Error: Failed to update profile.' };
+  }
+
+  revalidatePath('/dashboard/profile');
+  return { message: 'Profile updated successfully.', success: true };
 }
